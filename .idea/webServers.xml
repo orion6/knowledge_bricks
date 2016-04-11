@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b3ea3e74-0a17-493c-82ca-ea041481864f" name="ux.up.krakow.pl" url="http://ux.up.krakow.pl/~orion7/">
+        <fileTransfer host="ux.up.krakow.pl" port="22" rootFolder="/home/orion7" accessType="SFTP" username="orion7">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
