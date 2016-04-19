@@ -80,9 +80,9 @@
                 <div class="col-lg-12">
                     <img class="img-responsive" src="img/profile.png" alt="">
                     <div class="intro-text">
-                        <span class="name"><?= $lang['intro'];?><</span>
+                        <span class="name"><?= $lang['intro'];?></span>
                         <hr class="star-light">
-                        <span class="skills"><?= $lang['intro'];?></span>
+                        <span class="skills"><?= $lang['skills'];?></span>
                     </div>
                 </div>
             </div>
@@ -94,7 +94,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Opis</h2>
+                    <h2><?= $lang['menu1'];?></h2>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -138,20 +138,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Instrukcja</h2>
+                    <h2><?= $lang['menu2'];?></h2>
                     <hr class="star-light">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Krótki opis instrukcji. Krótki opis instrukcji. Krótki opis instrukcji. Krótki opis instrukcji.</p>
+                    <p><?= $lang['instruction-desc'];?></p>
                 </div>
                 <div class="col-lg-4">
-                    <p>Instrukcja skrócona. </p>
+                    <p><?= $lang['instruction-desc-short'];?></p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Pobierz pełną instrukcje
+                        <i class="fa fa-download"></i><?= $lang['instruction-desc-down'];?>
                     </a>
                 </div>
             </div>
@@ -164,20 +164,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Pobieranie</h2>
+                    <h2><?= $lang['menu3'];?></h2>
                     <hr class="star-light">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Krótki opis pobierania. Krótki opis pobierania. Krótki opis pobierania. Krótki opis pobierania.</p>
+                    <p><?= $lang['download-desc'];?></p>
                 </div>
                 <div class="col-lg-4">
-                    <p>Krótki opis wymagań. Krótki opis wymagań. Krótki opis wymagań. </p>
+                    <p><?= $lang['download-req'];?></p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Pobierz grę
+                        <i class="fa fa-download"></i><?= $lang['download-game'];?>
                     </a>
                 </div>
             </div>
@@ -189,7 +189,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Kontakt</h2>
+                    <h2><?= $lang['menu4'];?></h2>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -200,15 +200,15 @@
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Imię</label>
-                                <input type="text" class="form-control" placeholder="Imię" id="name" required data-validation-required-message="Please enter your name.">
+                                <label><?= $lang['form']['name'];?></label>
+                                <input type="text" class="form-control" placeholder="<?= $lang['form']['name'];?>" id="name" required data-validation-required-message="<?= $lang['form']['name-ps'];?>">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Adres Email</label>
-                                <input type="email" class="form-control" placeholder="Adres Email" id="email" required data-validation-required-message="Please enter your email address.">
+                                <label><?= $lang['form']['email'];?></label>
+                                <input type="email" class="form-control" placeholder="<?= $lang['form']['email'];?>" id="email" required data-validation-required-message="<?= $lang['form']['email-ps'];?>">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -221,8 +221,8 @@
                         <!--</div>-->
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Wiadomość</label>
-                                <textarea rows="5" class="form-control" placeholder="Wiadomość" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <label><?= $lang['form']['message'];?></label>
+                                <textarea rows="5" class="form-control" placeholder="<?= $lang['form']['message'];?>" id="message" required data-validation-required-message="<?= $lang['form']['message-ps'];?>"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -230,7 +230,7 @@
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Wyślij</button>
+                                <button type="submit" class="btn btn-success btn-lg"><?= $lang['form']['send'];?></button>
                             </div>
                         </div>
                     </form>
