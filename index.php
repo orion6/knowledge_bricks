@@ -9,7 +9,8 @@
     <meta name="description" content="Knowledge Bricks, Klocki Wiedzy">
     <meta name="author" content="Uniwersytet Pedagogiczny">
 
-    <title>Klocki Wiedzy - gra kinect dla dzieci</title>
+	<? include_once './lang/lang.pl.php';?>
+    <title><?= $lang['title'];?></title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -44,7 +45,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Klocki Wiedzy</a>
+                <a class="navbar-brand" href="#page-top"><?= $lang['navbar'];?></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,16 +55,16 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Opis</a>
+                        <a href="#portfolio"><?= $lang['menu1'];?></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#instruction">Instrukcja</a>
+                        <a href="#instruction"><?= $lang['menu2'];?></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#download">Pobieranie</a>
+                        <a href="#download"><?= $lang['menu3'];?></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Kontakt</a>
+                        <a href="#contact"><?= $lang['menu4'];?></a>
                     </li>
                 </ul>
             </div>
@@ -79,9 +80,9 @@
                 <div class="col-lg-12">
                     <img class="img-responsive" src="img/profile.png" alt="">
                     <div class="intro-text">
-                        <span class="name">Klocki Wiedzy</span>
+                        <span class="name"><?= $lang['intro'];?><</span>
                         <hr class="star-light">
-                        <span class="skills">Zabawa - Nauka - Rozwój</span>
+                        <span class="skills"><?= $lang['intro'];?></span>
                     </div>
                 </div>
             </div>
