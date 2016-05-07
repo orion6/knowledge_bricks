@@ -1,3 +1,7 @@
+<?
+// Start the session
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pl">
 
@@ -9,7 +13,29 @@
     <meta name="description" content="Knowledge Bricks, Klocki Wiedzy">
     <meta name="author" content="Uniwersytet Pedagogiczny">
 
-	<? include_once './lang/lang.pl.php';?>
+    <?
+    include 'lang/class.lang.php';
+    $langAgent = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        if (isset($_POST['language'])) {
+            Lang::changeLang($_POST['language']);
+        }
+    } else {
+        if (isset($_SESSION['lang'])) {
+            Lang::changeLang($_SESSION['lang']);
+        } else {
+            Lang::changeLang($langAgent);
+        }
+    }
+
+
+    if(Lang::getLanguage() == 'en') {
+        require_once 'lang/lang.en.php';
+    } else {
+        require_once 'lang/lang.pl.php';
+    }
+
+    ?>
     <title><?= $lang['title'];?></title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
@@ -69,6 +95,16 @@
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
+        </div>
+        <!-- Change Language -->
+        <div class="btn-group language-set">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <?= Lang::getLanguage() == 'en' ? 'EN': 'PL'; ?><span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="./" onclick="setLanguagePl()">PL</a></li>
+                <li><a href="./" onclick="setLanguageEn()">EN</a></li>
+            </ul>
         </div>
         <!-- /.container-fluid -->
     </nav>
@@ -245,11 +281,11 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-6">
-                        <h3>Tu też coś</h3>
-                        <p>Tu coś będzie.</p>
+                        <h3><?= $lang['footer']['colh3'];?></h3>
+                        <p><?= $lang['footer']['colh3'];?></p>
                     </div>
                     <div class="footer-col col-md-6">
-                        <h3>O nas</h3>
+                        <h3><?= $lang['footer']['onas'];?></h3>
                         <p>Napiszemy tutaj coś krótkiego o nas.</p>
                     </div>
                 </div>

@@ -30,3 +30,10 @@ $lang['form']['message'] = 'Wiadomość';
 $lang['form']['message-ps'] = 'Wpisz wiadomośc';
 
 $lang['form']['send'] = 'Wyślij';
+
+$lang['footer']['colh3'] = 'Tu też coś';
+$lang['footer']['colp'] = 'Tu coś będzie.';
+
+$lang['footer']['onas'] = 'O nas';
+$lang['footer']['onasp'] = 'Jesteśmy studentami infromatyki z Krakowa.';
+

@@ -35,3 +35,11 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+function setLanguagePl() {
+    $.post('index.php',{ language: 'pl'});
+}
+
+function setLanguageEn() {
+    $.post('index.php',{ language: 'en'});
+}
