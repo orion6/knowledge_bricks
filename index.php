@@ -43,6 +43,7 @@ session_start();
 
     <!-- Custom CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
+	<link href="css/user.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -283,6 +284,12 @@ session_start();
                     <div class="footer-col col-md-6">
                         <h3><?= $lang['footer']['colh3'];?></h3>
                         <p><?= $lang['footer']['colh3'];?></p>
+						<ul class="col-md-5 col-md-offset-4">
+							<li>Justyna Bejgrowicz</li>
+							<li>Macięj Sępiak</li>
+							<li>Tomasz Wądrzyk</li>
+							<li>Marcin Gąsiorek</li>
+						</ul>
                     </div>
                     <div class="footer-col col-md-6">
                         <h3><?= $lang['footer']['onas'];?></h3>
