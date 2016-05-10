@@ -290,10 +290,9 @@ session_start();
 							<li>Tomasz Wądrzyk</li>
 							<li>Marcin Gąsiorek</li>
 						</ul>
-                    </div>
-                    <div class="footer-col col-md-6">
-                        <h3><?= $lang['footer']['onas'];?></h3>
-                        <p>Napiszemy tutaj coś krótkiego o nas.</p>
+						
+						<p>pod kierownictwem:</p>
+						<p>dr. inż. Tomasz Hachaj</p>
                     </div>
                 </div>
             </div>
