@@ -281,8 +281,8 @@ session_start();
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-6">
-                        <h3><?= $lang['footer']['colh3'];?></h3>
+                    <div class="footer-col col-md-12 text-center">
+                        <h3 class="black"><?= $lang['footer']['colh3'];?></h3>
                         <p><?= $lang['footer']['colh3'];?></p>
 						<ul class="col-md-5 col-md-offset-4">
 							<li>Justyna Bejgrowicz</li>
