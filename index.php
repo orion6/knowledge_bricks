@@ -1,4 +1,4 @@
-<?
+<?php
 // Start the session
 session_start();
 ?>
@@ -13,7 +13,7 @@ session_start();
     <meta name="description" content="Knowledge Bricks, Klocki Wiedzy">
     <meta name="author" content="Uniwersytet Pedagogiczny">
 
-    <?
+    <?php
     include 'lang/class.lang.php';
     $langAgent = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -40,11 +40,16 @@ session_start();
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+	
+	<!-- Slick slider CSS -->
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <!-- Custom CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
-	<link href="css/user.css" rel="stylesheet">
-
+	<!--<link href="css/user.css" rel="stylesheet">-->
+	
+	
+	<script src="js/jquery-1.12.3.js"></script>
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -56,7 +61,7 @@ session_start();
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+	<script src="js/user.js"></script>
 </head>
 
 <body id="page-top" class="index">
@@ -114,20 +119,28 @@ session_start();
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <!--<div class="col-lg-12">
                     <img class="img-responsive" src="img/profile.png" alt="">
                     <div class="intro-text">
                         <span class="name"><?= $lang['intro'];?></span>
                         <hr class="star-light">
                         <span class="skills"><?= $lang['skills'];?></span>
                     </div>
+                </div>-->
+				<div class="col-lg-12 text-center">
+                    <h3 class="white">Nazwa gry - baw się razem z nami</h3>
                 </div>
+				<div class="col-lg-12">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute trure dolor 
+						in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
             </div>
         </div>
     </header>
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+    <!--<section id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -168,66 +181,159 @@ session_start();
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
+	<section class="game_info">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+                    <h3 class="black">Opis gry</h3>
+                </div>
+				<div class="col-lg-12">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute trure dolor 
+						in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="instruction">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+                    <h3 class="white">Instrukcja</h3>
+                </div>
+				<div class="col-lg-12">
+					<div class="instruction_slider">
+						<div class="col-lg-12 slide_wrapper">
+							<div class="col-lg-3">
+								<img src="img/img_slider.jpg" alt=""/>
+							</div>
+							<div class="col-lg-9 slide_info">
+								<h1 class="white"><span>0.1 -</span> jak pokonać smoka?</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute trure dolor 
+								in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+						
+						<div class="col-lg-12 slide_wrapper">
+							<div class="col-lg-3">
+								<img src="img/img_slider.jpg" alt=""/>
+							</div>
+							<div class="col-lg-9 slide_info">
+								<h1 class="white"><span>0.1 -</span> jak pokonać smoka?</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute trure dolor 
+								in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+						
+						<div class="col-lg-12 slide_wrapper">
+							<div class="col-lg-3">
+								<img src="img/img_slider.jpg" alt=""/>
+							</div>
+							<div class="col-lg-9 slide_info">
+								<h1 class="white"><span>0.1 -</span> jak pokonać smoka?</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute trure dolor 
+								in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
     <!-- Instruction Section -->
-    <section class="success" id="instruction">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2><?= $lang['menu2'];?></h2>
-                    <hr class="star-light">
+	<div class="download_wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center download_intro">
+                    <h3 class="black">Pobieranie</h3>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p><?= $lang['instruction-desc'];?></p>
-                </div>
-                <div class="col-lg-4">
-                    <p><?= $lang['instruction-desc-short'];?></p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i><?= $lang['instruction-desc-down'];?>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+				<section class="success col-lg-6" id="instruction">
+						<div class="row">
+							<div class="col-lg-12 text-center">
+								<h2 class="black"><!--<?= $lang['menu2'];?>-->Wymagania sprzętowe</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12">
+								<ul class="col-lg-offset-4">
+									<li>procesor xxx</li>
+									<li>grafika xxx</li>
+									<li>karta dźwiękowa</li>
+									<li>myszka</li>
+									<li>klawiatura</li>
+								</ul>
+							</div>
+							<!--<div class="col-lg-4 col-lg-offset-2">
+								<p><?= $lang['instruction-desc'];?></p>
+							</div>
+							<div class="col-lg-4">
+								<p><?= $lang['instruction-desc-short'];?></p>
+							</div>-->
+							<!--<div class="col-lg-8 col-lg-offset-2 text-center">
+								<a href="#" class="btn btn-lg btn-outline">
+									<i class="fa fa-download"></i><?= $lang['instruction-desc-down'];?>
+								</a>
+							</div>-->
+						</div>
+				</section>
 
 
-    <!-- About Section -->
-    <section class="success" id="download">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2><?= $lang['menu3'];?></h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p><?= $lang['download-desc'];?></p>
-                </div>
-                <div class="col-lg-4">
-                    <p><?= $lang['download-req'];?></p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i><?= $lang['download-game'];?>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
+				<!-- About Section -->
+				<section class="success col-lg-6" id="download">
+						<div class="row">
+							<div class="col-lg-12 text-center">
+								<h2><!--<?= $lang['menu3'];?>-->Pobierz pełną wersję gry:</h2>
+							</div>
+							<div class="col-lg-12 text-center buttons">
+								<a href="#" class="btn btn-lg btn-outline">
+									<?= $lang['download-game'];?>
+									<!--<i class="fa fa-download"></i><?= $lang['download-game'];?>-->
+								</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12 text-center">
+								<h2><!--<?= $lang['menu3'];?>-->Pobierz pełną wersję instrukcji:</h2>
+							</div>
+							<!--<div class="col-lg-4 col-lg-offset-2">
+								<p><?= $lang['download-desc'];?></p>
+							</div>
+							<div class="col-lg-4">
+								<p><?= $lang['download-req'];?></p>
+							</div>-->
+							<div class="col-lg-12 buttons">
+								<a href="#" class="btn btn-lg btn-outline">
+									<!--<?= $lang['instruction-desc-down'];?>-->
+									Pobierz instrukcję
+									<!--<i class="fa fa-download"></i><?= $lang['instruction-desc-down'];?>-->
+								</a>
+							</div>
+							<!--<div class="col-lg-12 text-center buttons">
+								<a href="#" class="btn btn-lg btn-outline">
+									<i class="fa fa-download"></i><?= $lang['download-game'];?>
+								</a>
+							</div>-->
+						</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	
     <!-- Contact Section -->
     <section id="contact">
+		<div class="darker">
+		</div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2><?= $lang['menu4'];?></h2>
-                    <hr class="star-primary">
+                    <h3 class="white"><!--<?= $lang['menu4'];?>-->Kontakt z nami</h3>
                 </div>
             </div>
             <div class="row">
@@ -266,8 +372,8 @@ session_start();
                         <br>
                         <div id="success"></div>
                         <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg"><?= $lang['form']['send'];?></button>
+                            <div class="form-group col-xs-12 text-center">
+                                <button type="submit" class="btn btn-user"><?= $lang['form']['send'];?></button>
                             </div>
                         </div>
                     </form>
@@ -282,8 +388,8 @@ session_start();
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-12 text-center">
-                        <h3 class="black"><?= $lang['footer']['colh3'];?></h3>
-                        <p><?= $lang['footer']['colh3'];?></p>
+                        <h3 class="black"><!--<?= $lang['footer']['colh3'];?>-->Zespół projektowy</h3>
+                        <p><!--<?= $lang['footer']['colh3'];?>--></p>
 						<ul class="col-md-5 col-md-offset-4">
 							<li>Justyna Bejgrowicz</li>
 							<li>Macięj Sępiak</li>
@@ -429,8 +535,7 @@ session_start();
         </div>
     </div>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -446,6 +551,10 @@ session_start();
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
+	
+	<!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+	<script type="text/javascript" src="slick/slick.min.js"></script>
 
 </body>
 

@@ -1,0 +1,22 @@
+/* HEADER */
+.navbar-fixed-top {
+	padding: 0;
+	min-height: 115px;
+}
+
+.navbar-nav:before {
+	content: "";
+	position: absolute;
+	left: -90px;
+	width: 0;
+	height: 0;
+	border-top: 0px solid transparent;
+	border-right: 100px solid red;
+	border-bottom: 115px solid transparent;
+}
+
+@media screen and (max-width: 768px) {
+	.navbar-nav:before {
+		display: none;
+	}
+}
