@@ -87,7 +87,7 @@ session_start();
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio"><?= $lang['menu1'];?></a>
+                        <a href="#desc"><?= $lang['menu1'];?></a>
                     </li>
                     <li class="page-scroll">
                         <a href="#instruction"><?= $lang['menu2'];?></a>
@@ -182,7 +182,7 @@ session_start();
             </div>
         </div>
     </section>-->
-	<section class="game_info">
+	<section id="desc" class="game_info">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
@@ -197,7 +197,7 @@ session_start();
 		</div>
 	</section>
 	
-	<section class="instruction">
+	<section id="instruction" class="instruction">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
@@ -248,13 +248,13 @@ session_start();
 	</section>
 
     <!-- Instruction Section -->
-	<div class="download_wrapper">
+	<div id="download" class="download_wrapper">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center download_intro">
                     <h3 class="black">Pobieranie</h3>
                 </div>
-				<section class="success col-lg-6" id="instruction">
+				<section class="success col-lg-6">
 						<div class="row">
 							<div class="col-lg-12 text-center">
 								<h2 class="black"><!--<?= $lang['menu2'];?>-->Wymagania sprzętowe</h2>
@@ -286,7 +286,7 @@ session_start();
 
 
 				<!-- About Section -->
-				<section class="success col-lg-6" id="download">
+				<section class="success col-lg-6">
 						<div class="row">
 							<div class="col-lg-12 text-center">
 								<h2><!--<?= $lang['menu3'];?>-->Pobierz pełną wersję gry:</h2>
