@@ -219,7 +219,7 @@ session_start();
 								<img src="img/img_slider.jpg" alt=""/>
 							</div>
 							<div class="col-lg-9 slide_info">
-								<h1 class="white"><span>0.1 -</span> <?php echo $lang['instruction2'];?></h1>
+								<h1 class="white"><span>0.2 -</span> <?php echo $lang['instruction2'];?></h1>
 								<p><?php echo $lang['instruction-text2'];?></p>
 							</div>
 						</div>
@@ -229,7 +229,7 @@ session_start();
 								<img src="img/img_slider.jpg" alt=""/>
 							</div>
 							<div class="col-lg-9 slide_info">
-								<h1 class="white"><span>0.1 -</span> <?php echo $lang['instruction3'];?></h1>
+								<h1 class="white"><span>0.3 -</span> <?php echo $lang['instruction3'];?></h1>
 								<p><?php echo $lang['instruction-text3'];?></p>
 							</div>
 						</div>

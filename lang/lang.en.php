@@ -7,9 +7,7 @@ $lang = Array();
 
 $lang['title'] = 'Knowledge Bricks - kinnect game for children';
 $lang['navbar'] = 'Knowledge Bricks';
-$lang['header-desc'] = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute trure dolor
-						in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+$lang['header-desc'] = 'An pc/windows open word game for children using kinnect.';
 $lang['menu1'] = 'Description';
 $lang['menu2'] = 'Instructions';
 $lang['menu3'] = 'Download';
@@ -18,29 +16,38 @@ $lang['menu5'] = 'About';
 $lang['intro'] = 'Knowledge Bricks';
 
 $lang['game-info'] = 'Game description';
-$lang['short-info'] = 'Short game info Short game info Short game info Short game info Short game info Short game info Short game info Short game info Short game info Short game info';
+$lang['short-info'] = 'Game usues kinnect technology to move around open word, built from cubes. Many challenging quests and interactive gameplay.';
 
-$lang['instruction1'] = 'How to beat the dragon?';
-$lang['instruction2'] = 'How to beat the dragon?';
-$lang['instruction3'] = 'How to beat the dragon?';
+$lang['instruction1'] = 'How to activate game?';
+$lang['instruction2'] = 'The first launch of the game';
+$lang['instruction3'] = 'Control of the wizard world';
 
-$lang['instruction-text1'] = 'Instruction fragment Instruction fragment Instruction fragment Instruction fragment Instruction fragment ';
-$lang['instruction-text2'] = 'Instruction fragment Instruction fragment Instruction fragment Instruction fragment Instruction fragment ';
-$lang['instruction-text3'] = 'Instruction fragment Instruction fragment Instruction fragment Instruction fragment Instruction fragment ';
+$lang['instruction-text1'] = 'After downloading the game,
+unpack it and play UltimateLicenceGenerator.exe. First, press the purple
+buttonGenerateActivationRequest, and then click the green buttonGenerateActivationCode. Then the
+bottom fields copy the generated code and paste it in the field ActivationCode. If all goes well will the
+message "Product has been successfully activated."
+pg';
+$lang['instruction-text2'] = 'When you start the game see the main menu, where you can generate a new game map. In the blue box you need to enter the name of the player of the world, you can specify the
+size, map type, grain (variable initialization random number generator), if they occur, and whether
+the tree area will be flat. When you set up and pressed the world will show the message "World
+named<world_name>has been created."
+pg';
+$lang['instruction-text3'] = 'Up Arrow – move forward. Down Arrow – move backward. Right Arrow – turn right. Left Arrow – turn left. Holding down the right mouse button - to rotate around it saxis. Space - jump. ESC - exit the program';
 
-$lang['instruction-desc'] = 'Short instructions.';
+$lang['instruction-desc'] = 'A full manual describes whole game mechanism and level editor.';
 $lang['instruction-desc-short'] = 'Quick instructions';
 $lang['instruction-desc-down'] = 'Download full manual';
 $lang['instruction-desc-down-b'] = 'Download manual';
 
-$lang['download-desc'] = 'Short download description';
-$lang['download-req'] = 'Requrements.';
+$lang['download-desc'] = 'Download and unpack game. Instalation process is described in manual';
+$lang['download-req'] = 'Requirements.';
 $lang['download-game'] = 'Download';
 $lang['download-full'] = 'Download full version';
 
 $lang['proc'] = 'Processor: XXX';
 $lang['graf'] = 'Graphics: intel HD3000';
-    $lang['sound'] = 'Sound: optional';
+$lang['sound'] = 'Sound: optional';
 $lang['mouse'] = 'Mouse';
 $lang['keyboard'] = 'Keyboard';
 

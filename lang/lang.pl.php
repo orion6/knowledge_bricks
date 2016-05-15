@@ -7,9 +7,7 @@ $lang = Array();
 
 $lang['title'] = 'Klocki Wiedzy - baw się razem z nami';
 $lang['navbar'] = 'Klocki Wiedzy';
-$lang['header-desc'] = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute trure dolor
-						in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+$lang['header-desc'] = 'Edukacyjna gra dla dzieci na platformę windows/pc wyjorzystujaca technologię kinnect.';
 $lang['menu1'] = 'Opis';
 $lang['menu2'] = 'Instrukcja';
 $lang['menu3'] = 'Pobieranie';
@@ -18,23 +16,23 @@ $lang['menu5'] = 'O nas';
 $lang['intro'] = 'Klocki Wiedzy';
 
 $lang['game-info'] = 'Opis gry';
-$lang['short-info'] = 'Krótki opis gry. Krótki opis gry. Krótki opis gry. Krótki opis gry. Krótki opis gry. Krótki opis gry. Krótki opis gry. ';
+$lang['short-info'] = 'Gra wykorzystuje technologie kinnect. Poruszaj się po otwarym świecie gry zbudowanym z sześcianów za pomocą własnych nóg. Interaktywna rozrywka podaczas, której wykonasz wiele wymagających zadań.';
 
-$lang['instruction1'] = 'Jak pokonac smoka?';
-$lang['instruction2'] = 'Jak pokonac smoka?';
-$lang['instruction3'] = 'Jak pokonac smoka?';
+$lang['instruction1'] = 'Jak aktywaować grę?';
+$lang['instruction2'] = 'Pierwsze uruchomienie';
+$lang['instruction3'] = 'Sterowanie w kreatorze świata';
 
-$lang['instruction-text1'] = 'Fragment instrukcji Fragment instrukcji Fragment instrukcji Fragment instrukcji Fragment instrukcji ';
-$lang['instruction-text2'] = 'Fragment instrukcji Fragment instrukcji Fragment instrukcji Fragment instrukcji Fragment instrukcji ';
-$lang['instruction-text3'] = 'Fragment instrukcji Fragment instrukcji Fragment instrukcji Fragment instrukcji Fragment instrukcji ';
+$lang['instruction-text1'] = 'Po ściągnięciu gry rozpakuj ją i włącz UltimateLicenceGenerator.exe. Najpierw naciśnij fioletowy przycisk Generate Activation Request, a następnie kliknij w zielony przycisk Generate Activation Code. Potem z dolnego pola przekopiuj wygenerowany kod i wklej go w polu Activation Code. Jeśli wszystko przebiegnie pomyślnie ukaże się komunikat „Product has been successfully activated”.';
+$lang['instruction-text2'] = 'Po uruchomieniu gry widoczne jest menu główne, gdzie przyciskiem Nowy świat można wygenerować nową mapę gry. W niebieskim okienku trzeba wpisać nazwę gracza, świata, można określić rozmiar, typ mapy, ziarno(zmienna inicjująca generator liczb pseudolosowych) , czy mają pojawić się drzewa oraz czy teren będzie płaski. Po ustawieniu opcji i naciśnięciu Utwórz świat pokaże się komunikat „Świat o nazwie <nazwa_swiata> został utworzony”.';
+$lang['instruction-text3'] = 'Strzałka do góry - ruch do przodu. Strzałka w dół – ruch do tyłu. Strzałka w prawo – obrót w prawo. Strzałka w lewo – obrót w lewo. Przytrzymanie prawego przycisku myszy – obracanie się wokół własnej osi. Spacja – skok. ESC – wyjście z programu';
 
-$lang['instruction-desc'] = 'Krótki opis instrukcji. Krótki opis instrukcji. Krótki opis instrukcji. Krótki opis instrukcji.';
+$lang['instruction-desc'] = 'Pełna instrukcja zawiera opis całego mechanizmu gry oraz rozbudowane edytora poziomów.';
 $lang['instruction-desc-short'] = 'Instrukcja skrócona.';
 $lang['instruction-desc-down'] = 'Pobierz pełną instrukcje';
 $lang['instruction-desc-down-b'] = 'Pobierz instrukcje';
 
-$lang['download-desc'] = 'Krótki opis pobierania. Krótki opis pobierania. Krótki opis pobierania. Krótki opis pobierania.';
-$lang['download-req'] = 'Krótki opis wymagań. Krótki opis wymagań. Krótki opis wymagań.';
+$lang['download-desc'] = 'Pobierz i rozpakuj grę. Opis instalacji znajdziesz w instrukcji.';
+$lang['download-req'] = 'Wymagany komputer klasy pc z systemem windows vista lub nowszym';
 $lang['download-game'] = 'Pobierz grę';
 $lang['download-full'] = 'Pobierz pełną wersję gry';
 
