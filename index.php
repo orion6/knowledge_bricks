@@ -98,6 +98,9 @@ session_start();
                     <li class="page-scroll">
                         <a href="#contact"><?= $lang['menu4'];?></a>
                     </li>
+                    <li class="page-scroll">
+                        <a href="#about"><?= $lang['menu5'];?></a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -128,12 +131,10 @@ session_start();
                     </div>
                 </div>-->
 				<div class="col-lg-12 text-center">
-                    <h3 class="white">Nazwa gry - baw się razem z nami</h3>
+                    <h3 class="white"><?php echo $lang['title'];?></h3>
                 </div>
 				<div class="col-lg-12">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute trure dolor 
-						in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p><?php echo $lang['header-desc'];?></p>
 				</div>
             </div>
         </div>
@@ -186,12 +187,10 @@ session_start();
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
-                    <h3 class="black">Opis gry</h3>
+                    <h3 class="black"><?php echo $lang['game-info'];?></h3>
                 </div>
 				<div class="col-lg-12">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute trure dolor 
-						in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p><?php echo $lang['short-info'];?></p>
 				</div>
 			</div>
 		</div>
@@ -201,7 +200,7 @@ session_start();
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
-                    <h3 class="white">Instrukcja</h3>
+                    <h3 class="white"><?php echo $lang['menu2'];?></h3>
                 </div>
 				<div class="col-lg-12">
 					<div class="instruction_slider">
@@ -210,10 +209,8 @@ session_start();
 								<img src="img/img_slider.jpg" alt=""/>
 							</div>
 							<div class="col-lg-9 slide_info">
-								<h1 class="white"><span>0.1 -</span> jak pokonać smoka?</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute trure dolor 
-								in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<h1 class="white"><span>0.1 -</span> <?php echo $lang['instruction1'];?></h1>
+								<p><?php echo $lang['instruction-text1'];?></p>
 							</div>
 						</div>
 						
@@ -222,10 +219,8 @@ session_start();
 								<img src="img/img_slider.jpg" alt=""/>
 							</div>
 							<div class="col-lg-9 slide_info">
-								<h1 class="white"><span>0.1 -</span> jak pokonać smoka?</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute trure dolor 
-								in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<h1 class="white"><span>0.1 -</span> <?php echo $lang['instruction2'];?></h1>
+								<p><?php echo $lang['instruction-text2'];?></p>
 							</div>
 						</div>
 						
@@ -234,10 +229,8 @@ session_start();
 								<img src="img/img_slider.jpg" alt=""/>
 							</div>
 							<div class="col-lg-9 slide_info">
-								<h1 class="white"><span>0.1 -</span> jak pokonać smoka?</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute trure dolor 
-								in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<h1 class="white"><span>0.1 -</span> <?php echo $lang['instruction3'];?></h1>
+								<p><?php echo $lang['instruction-text3'];?></p>
 							</div>
 						</div>
 						
@@ -252,35 +245,24 @@ session_start();
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center download_intro">
-                    <h3 class="black">Pobieranie</h3>
+                    <h3 class="black"><?php echo $lang['download-game'];?></h3>
                 </div>
 				<section class="success col-lg-6">
 						<div class="row">
 							<div class="col-lg-12 text-center">
-								<h2 class="black"><!--<?= $lang['menu2'];?>-->Wymagania sprzętowe</h2>
+								<h2 class="black"><?php echo $lang['download-req'];?></h2>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-lg-12">
 								<ul class="col-lg-offset-4">
-									<li>procesor xxx</li>
-									<li>grafika xxx</li>
-									<li>karta dźwiękowa</li>
-									<li>myszka</li>
-									<li>klawiatura</li>
+									<li><?php echo $lang['proc'];?></li>
+									<li><?php echo $lang['graf'];?></li>
+									<li><?php echo $lang['sound'];?></li>
+									<li><?php echo $lang['mouse'];?></li>
+									<li><?php echo $lang['keyboard'];?></li>
 								</ul>
 							</div>
-							<!--<div class="col-lg-4 col-lg-offset-2">
-								<p><?= $lang['instruction-desc'];?></p>
-							</div>
-							<div class="col-lg-4">
-								<p><?= $lang['instruction-desc-short'];?></p>
-							</div>-->
-							<!--<div class="col-lg-8 col-lg-offset-2 text-center">
-								<a href="#" class="btn btn-lg btn-outline">
-									<i class="fa fa-download"></i><?= $lang['instruction-desc-down'];?>
-								</a>
-							</div>-->
 						</div>
 				</section>
 
@@ -289,37 +271,23 @@ session_start();
 				<section class="success col-lg-6">
 						<div class="row">
 							<div class="col-lg-12 text-center">
-								<h2><!--<?= $lang['menu3'];?>-->Pobierz pełną wersję gry:</h2>
+								<h2><?php echo $lang['download-full'];?></h2>
 							</div>
 							<div class="col-lg-12 text-center buttons">
 								<a href="#" class="btn btn-lg btn-outline">
 									<?= $lang['download-game'];?>
-									<!--<i class="fa fa-download"></i><?= $lang['download-game'];?>-->
 								</a>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-lg-12 text-center">
-								<h2><!--<?= $lang['menu3'];?>-->Pobierz pełną wersję instrukcji:</h2>
+								<h2><?php echo $lang['instruction-desc-down'];?></h2>
 							</div>
-							<!--<div class="col-lg-4 col-lg-offset-2">
-								<p><?= $lang['download-desc'];?></p>
-							</div>
-							<div class="col-lg-4">
-								<p><?= $lang['download-req'];?></p>
-							</div>-->
 							<div class="col-lg-12 buttons">
 								<a href="#" class="btn btn-lg btn-outline">
-									<!--<?= $lang['instruction-desc-down'];?>-->
-									Pobierz instrukcję
-									<!--<i class="fa fa-download"></i><?= $lang['instruction-desc-down'];?>-->
+                                    <?php echo $lang['instruction-desc-down-b'];?>
 								</a>
 							</div>
-							<!--<div class="col-lg-12 text-center buttons">
-								<a href="#" class="btn btn-lg btn-outline">
-									<i class="fa fa-download"></i><?= $lang['download-game'];?>
-								</a>
-							</div>-->
 						</div>
 				</section>
 			</div>
@@ -333,13 +301,11 @@ session_start();
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3 class="white"><!--<?= $lang['menu4'];?>-->Kontakt z nami</h3>
+                    <h3 class="white"><?php echo $lang['form']['title'];?></h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
@@ -355,13 +321,6 @@ session_start();
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
-                        <!--<div class="row control-group">-->
-                            <!--<div class="form-group col-xs-12 floating-label-form-group controls">-->
-                                <!--<label>Phone Number</label>-->
-                                <!--<input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">-->
-                                <!--<p class="help-block text-danger"></p>-->
-                            <!--</div>-->
-                        <!--</div>-->
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label><?= $lang['form']['message'];?></label>
@@ -383,13 +342,13 @@ session_start();
     </section>
 
     <!-- Footer -->
-    <footer class="text-center">
+    <footer id="about" class="text-center">
         <div class="footer-above">
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-12 text-center">
-                        <h3 class="black"><!--<?= $lang['footer']['colh3'];?>-->Zespół projektowy</h3>
-                        <p><!--<?= $lang['footer']['colh3'];?>--></p>
+                        <h3 class="black"><?php echo $lang['team'];?></h3>
+                        <p></p>
 						<ul class="col-md-5 col-md-offset-4">
 							<li>Justyna Bejgrowicz</li>
 							<li>Macięj Sępiak</li>
@@ -397,7 +356,7 @@ session_start();
 							<li>Marcin Gąsiorek</li>
 						</ul>
 						
-						<p>pod kierownictwem:</p>
+						<p><?php echo $lang['lead'];?>:</p>
 						<p>dr. inż. Tomasz Hachaj</p>
                     </div>
                 </div>
@@ -421,121 +380,6 @@ session_start();
             <i class="fa fa-chevron-up"></i>
         </a>
     </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Skacz</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            <p>Opis jednego z ficzerów gry. Opis jednego z ficzerów gry. Opis jednego z ficzerów gry. Opis jednego z ficzerów gry. Opis jednego z ficzerów gry.</p>
-                            <ul class="list-inline item-details">
-                                <li>Co:
-                                    <strong>Raz
-                                    </strong>
-                                </li>
-                                <li>Gdzie:
-                                    <strong>Dwa
-                                    </strong>
-                                </li>
-                                <li>Jak:
-                                    <strong>Trzy
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Zamknij</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Biegaj</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Opis jednego z ficzerów gry. Opis jednego z ficzerów gry. Opis jednego z ficzerów gry. Opis jednego z ficzerów gry. Opis jednego z ficzerów gry.</p>
-                            <ul class="list-inline item-details">
-                                <li>Co:
-                                    <strong>Raz
-                                    </strong>
-                                </li>
-                                <li>Gdzie:
-                                    <strong>Dwa
-                                    </strong>
-                                </li>
-                                <li>Jak:
-                                    <strong>Trzy
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Zamknij</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Rozwiązuj zagadki</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>Opis jednego z ficzerów gry. Opis jednego z ficzerów gry. Opis jednego z ficzerów gry. Opis jednego z ficzerów gry. Opis jednego z ficzerów gry.</p>
-                            <ul class="list-inline item-details">
-                                <li>Co:
-                                    <strong>Raz
-                                    </strong>
-                                </li>
-                                <li>Gdzie:
-                                    <strong>Dwa
-                                    </strong>
-                                </li>
-                                <li>Jak:
-                                    <strong>Trzy
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Zamknij</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
