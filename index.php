@@ -284,7 +284,7 @@ session_start();
 								<h2><?php echo $lang['download-full'];?></h2>
 							</div>
 							<div class="col-lg-12 text-center buttons">
-								<a href="#" class="btn btn-lg btn-outline">
+								<a  class="btn btn-lg btn-outline" target="_blank">
 									<?= $lang['download-game'];?>
 								</a>
 							</div>
@@ -294,7 +294,12 @@ session_start();
 								<h2><?php echo $lang['instruction-desc-down'];?></h2>
 							</div>
 							<div class="col-lg-12 buttons">
-								<a href="#" class="btn btn-lg btn-outline">
+								<a <?php if(Lang::getLanguage() == 'en') {
+                                    echo 'href="download/knowledgeb_manual_en.pdf"';
+                                } else {
+                                    echo 'href="download/knowledgeb_manual_pl.pdf"';
+                                }
+                                ;?> class="btn btn-lg btn-outline" target="_blank">
                                     <?php echo $lang['instruction-desc-down-b'];?>
 								</a>
 							</div>
