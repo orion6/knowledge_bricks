@@ -284,7 +284,7 @@ session_start();
 								<h2><?php echo $lang['download-full'];?></h2>
 							</div>
 							<div class="col-lg-12 text-center buttons">
-								<a  class="btn btn-lg btn-outline" target="_blank">
+								<a  href="download/knowledge_bricks.zip" class="btn btn-lg btn-outline" target="_blank">
 									<?= $lang['download-game'];?>
 								</a>
 							</div>
