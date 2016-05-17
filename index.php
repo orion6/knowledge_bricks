@@ -68,6 +68,10 @@ session_start();
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
+		<div class="left_nav">
+		</div>
+		<div class="right_nav">
+		</div>
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -106,7 +110,7 @@ session_start();
             <!-- /.navbar-collapse -->
         </div>
         <!-- Change Language -->
-        <div class="btn-group language-set">
+        <!--<div class="btn-group language-set">
             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <?= Lang::getLanguage() == 'en' ? 'EN': 'PL'; ?><span class="caret"></span>
             </button>
@@ -114,7 +118,13 @@ session_start();
                 <li><a href="./" onclick="setLanguagePl()">PL</a></li>
                 <li><a href="./" onclick="setLanguageEn()">EN</a></li>
             </ul>
-        </div>
+        </div>-->
+		<div class="language-set">
+				<ul class="lolo">
+					<li class="eng"><a href="./" onclick="setLanguageEn()"></a></li>
+					<li class="pl"><a href="./" onclick="setLanguagePl()"></a></li>
+				</ul>
+			</div>
         <!-- /.container-fluid -->
     </nav>
 

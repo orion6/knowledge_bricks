@@ -135,11 +135,30 @@ hr.star-primary:after {
 header {
 	text-align: center;
 	/*background: @brand-success;*/
-	background: url('../img/section_1.jpg');
+	background: url('../img/section_1.jpg') no-repeat;
+	background-size: 100% 100%;
+	min-height: 710px;
 	color: white;
+	
 	.container {
+		border-bottom: 5px solid #ff5335;
 		padding-top: 100px;
 		padding-bottom: 50px;
+		min-height: inherit;
+			
+			h3 {
+				margin-bottom: 90px;
+			}
+			
+			.header_info {
+				text-transform: uppercase;
+			}
+			
+			.navbar-header {
+				.navbar-brand {
+					height: auto;
+				}
+			}
 	}
 	img {
 		display: block;
@@ -189,7 +208,6 @@ header {
 		width: 100%;
 		height: 100%;
 	}
-
 	
 	h3 {
 		margin-top: 40px;
@@ -405,30 +423,148 @@ header {
 	        -moz-transition: all 0.3s;
 	        transition: all 0.3s;
 	    }
+		
+		.navbar-nav {
+			li {
+				&:hover {
+					a {
+						color: #b8341d;
+						background-color: transparent;
+						border-bottom: 3px solid #ff0000;
+					}
+				}
+				
+				&.active {
+					&:hover {
+						a {
+						color: #b8341d;
+						background-color: transparent;
+						border-bottom: 3px solid #ff0000;
+					}
+					}
+					
+					a {
+						color: #b8341d;
+						background-color: transparent;
+						border-bottom: 3px solid #ff0000;
+					}
+				}
+			}
+			
+		}
     }
     .navbar-fixed-top.navbar-shrink {
-        padding: 10px 0;
+        /*padding: 10px 0;*/
 		.navbar-brand {
-	        font-size: 1.5em;
+	        /*font-size: 1.5em;*/
 	    }
 	}
 }
 
 .navbar {
-	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "OswaldBold", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
+	height: 115px;
+	padding: 56px 0 41px 0;
+	margin: 0;
+	background-color: transparent;
+	
 	a:focus {
 		outline: none;
 	}
+	
+	.navbar-brand {
+		padding: 0;
+	}
+	
 	.navbar-nav {
+		padding: 10px 0;
 		letter-spacing: 1px;
+		padding: 0;
 		li {
-			a:focus {
-				outline: none;
+			margin-right: 33px;
+			a {
+				font-size: 24px;
+				padding: 0;
+				&:focus {
+					outline: none;
+				}
 			}
 		}
 	}
+	
+	.left_nav {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 40%;
+		height: 100%;
+		background-color: #000000;
+	}
+	
+	.right_nav {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 60%;
+		height: 100%;
+		background-color: #ff5335;
+		
+		&:before {
+			
+		}
+	}
+	
+	.container {
+		.navbar-brand {
+			position: relative;
+		}
+		.btn-group {
+		display: block;
+		
+			> .btn {
+				float: right;
+			}
+		}
+	}
+	
+	.language-set {
+			background-color: #ff5335;
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			width: 130px;
+			bottom: -33%;
+			right: 5%;
+			
+			ul {
+				padding: 0;
+				margin: 0;
+				li {
+					display: inline-block;
+					width: 35px;
+					height: 35px;
+					margin-left: 21px;
+					
+					&.pl {
+						background: url("../img/pl.png");
+						background-size: 100% 100%;
+					}
+					
+					&.eng {
+						background: url("../img/eng.png");
+						background-size: 100% 100%;
+					}
+					
+					a {
+						display: block;
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
 }
 
 .navbar-default,
@@ -439,6 +575,7 @@ header {
 section {
     /*padding: 100px 0;*/
 	padding: 0;
+	padding-top: 115px;
     h2 {
     	margin: 0;
     	font-size: 3em;
@@ -629,7 +766,8 @@ footer {
 	}
 	
 	.footer-above {
-		padding-top: 50px;
+		padding-top: 115px;
+		padding-bottom: 25px;
 		background-color: transparent;
 		/*@brand-primary;*/
 	}
@@ -637,7 +775,8 @@ footer {
 		margin-bottom: 150px;
 	}
 	.footer-below {
-		padding: 25px 0;
+		padding: 0;
+		
 		/*background-color: darken(@brand-primary, 5%);*/
 		background-color: #000;
 		color: #FFF;
@@ -746,15 +885,4 @@ footer {
     	opacity: 0;
     	display: none;
     }
-}
-
-/** polozenie przycisku zmiany jezyka **/
-.dropdown-menu {
-	min-width: 60px;
-}
-
-.language-set {
-	position: absolute;
-	top: 10px;
-	right: 10px;
 }
